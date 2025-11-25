@@ -48,14 +48,28 @@ h2 {
 }
 
 .titre_header {
-    padding: 15px;
+    /* border: 1px solid red; */
+    padding: 15px 0px 15px 15px;
     word-wrap:unset;
+    /* width: 800px; */
 }
 
-.nom_prenom {
+.prenom_nom {
+    /* width: 400px; */
+        /* border: 1px solid rgb(72, 255, 0); */
+
     display:flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+
+.prenom {
+    padding-right: 20px;
+}
+
+.nom {
+    /* text-wrap:initial; */
 }
 
 .photo_id {
@@ -82,7 +96,9 @@ nav a {
 }
 
 nav {
-    padding: 0px 35px 0px 35px;
+    padding: 0px calc(1px + 2vw) 0px 0px;
+    /* border: 1px solid rgb(229, 255, 0); */
+
 }
 
 @media screen and (max-width: 768px) {
@@ -91,32 +107,26 @@ nav {
         display:flex;
         justify-content: space-between;
         flex-direction: column;
-        /* flex-wrap: wrap; */
     }
-
-nav {
-    padding: 0px 35px 0px 0px;
-}
 
 }
 
 
 @media screen and (min-width: 769px) {
     .titre_header {
-    padding-top: 105px;
+        padding-top: 105px;
     }
-nav {
-    padding: 0px 35px 0px 0px;
 }
-
-}
-
 
 
 @media screen and (max-width: 1024px) {
     nav {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 }
+
+/* fin de header */
+
+
 
