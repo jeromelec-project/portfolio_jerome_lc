@@ -8,6 +8,25 @@ body {
     background-color: black;
 }
 
+@font-face {
+    src: url(./lucidaconsole.ttf) format('truetype');
+    font-family: 'lucida';
+    font-weight: 'normal';   
+}
+
+h1, h2, nav a {
+    font-family: 'lucida';
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.4em;
+    padding-top: 10px;
+}
+
 .background_header {
     position:relative;
     width: 100%;
@@ -17,6 +36,7 @@ body {
 .contenant_header {
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contenant_header_gauche {
@@ -24,12 +44,18 @@ body {
     display:flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    /* align-items: center; */
     flex-wrap: wrap;
 }
 
 .titre_header {
     padding: 15px;
+    word-wrap:unset;
+}
+
+.nom_prenom {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .photo_id {
@@ -50,43 +76,47 @@ h1, h2, p {
 
 nav a {
     text-decoration: none;
-    
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
 }
 
+nav {
+    padding: 0px 35px 0px 35px;
+}
 
 @media screen and (max-width: 768px) {
-
-.contenant_header_gauche {
-    position: relative;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column;
-    /* align-items: center; */
-    flex-wrap: wrap;
-}
-
-
-.contenant_header {
-
-}
-
-
-}
-
-
-@media screen and (min-width: 768px) {
-.titre_header {
-    padding-top: 100px;
+    .contenant_header_gauche {
+        position: relative;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
     }
+
+nav {
+    padding: 0px 35px 0px 0px;
+}
+
+}
+
+
+@media screen and (min-width: 769px) {
+    .titre_header {
+    padding-top: 105px;
+    }
+nav {
+    padding: 0px 35px 0px 0px;
+}
+
 }
 
 
 
 @media screen and (max-width: 1024px) {
-
     nav {
     display: flex;
     flex-direction: column;
     }
-
 }
+
