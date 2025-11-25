@@ -8,13 +8,27 @@ body {
     background-color: black;
 }
 
-.block_header {
-    height: 200px;
+.background_header {
+    position:absolute;
+    width: 100%;
+    /* height: 200px; */
     background: linear-gradient(#025E73, #000000);
 }
 
+.contenant_header {
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.titre_header {
+
+}
+
 .photo_id {
-    position: absolute;
     background-image: url(img/idfb_crop.jpg);
     background-position: center;
     background-size: cover;
@@ -25,4 +39,7 @@ body {
     border-radius: 50%;
 }
 
+h1, h2, p {
+    color: white;
+}
 
