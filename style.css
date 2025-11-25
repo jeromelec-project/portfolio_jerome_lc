@@ -1,3 +1,28 @@
-p {
-    color: red;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+}
+
+.block_header {
+    height: 200px;
+    background: linear-gradient(#025E73, #000000);
+}
+
+.photo_id {
+    position: absolute;
+    background-image: url(img/idfb_crop.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 248px;
+    height: 248px;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+}
+
+
