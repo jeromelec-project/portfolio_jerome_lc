@@ -6,6 +6,8 @@
 
 body {
     background-color: black;
+    color: white;
+    font-family: sans-serif;
 }
 
 @font-face {
@@ -18,13 +20,35 @@ h1, h2, nav a {
     font-family: 'lucida';
 }
 
+h1, h2 {
+    font-weight: 100;
+}
+
 h1 {
     font-size: 1.6em;
 }
 
-h2 {
+header h2 {
     font-size: 1.4em;
     padding-top: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+section h2 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #03A688;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .background_header {
@@ -51,25 +75,17 @@ h2 {
     /* border: 1px solid red; */
     padding: 15px 0px 15px 15px;
     word-wrap:unset;
-    /* width: 800px; */
 }
 
 .prenom_nom {
-    /* width: 400px; */
-        /* border: 1px solid rgb(72, 255, 0); */
-
+    /* border: 1px solid rgb(72, 255, 0); */
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* flex-direction: row; */
 }
 
 .prenom {
     padding-right: 20px;
-}
-
-.nom {
-    /* text-wrap:initial; */
 }
 
 .photo_id {
@@ -84,9 +100,6 @@ h2 {
     border-radius: 50%;
 }
 
-h1, h2, p {
-    color: white;
-}
 
 nav a {
     text-decoration: none;
@@ -98,7 +111,6 @@ nav a {
 nav {
     padding: 0px calc(1px + 2vw) 0px 0px;
     /* border: 1px solid rgb(229, 255, 0); */
-
 }
 
 @media screen and (max-width: 768px) {
@@ -128,5 +140,35 @@ nav {
 
 /* fin de header */
 
+.contenant_1 {
+    display: flex;
+    justify-content: space-around;
+}
 
+section {
+    border-top: 2px solid #025E73;
+    border-bottom: 2px solid #025E73;
+    /* box-shadow: 0em 0em 1em #F2668B; */
+    box-shadow: 0em 0em 1em #025E73;
+    margin-top: 50px;
+    background-color: #011F26;
+    padding: 25px;
+    max-width: 500px;
+}
 
+.logo_dnb {
+    background-image: url(img/dnb.gif);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 120px;
+    transform: rotate(5deg);
+}
+
+.section_2_flex {
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding: 15px;
+}
