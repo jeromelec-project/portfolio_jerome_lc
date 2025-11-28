@@ -182,11 +182,23 @@ section {
     padding: 15px;
 }
 
+.apercu_projet {
+    background-image: url(img/lustre.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 160px;
+    height: 100px;
+}
+
 .bouton_rose {
+    /* position: relative; */
+    display: inline-block;
     color: #F2668B;
     border: 2px solid #F2668B;
     border-radius: 50px;
     padding: 15px;
+    margin: 25px 25px 15px 25px;
+    height: 50px;
 }
 
 
