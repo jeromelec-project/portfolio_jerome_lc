@@ -180,6 +180,11 @@ nav {
 
 /* page d'accueil */
 
+#haut {
+    position: absolute;
+    /* border: 1px solid rgb(0, 225, 255); */
+}
+
 .contenant_1 {
     position: relative;
     width: 100%;
